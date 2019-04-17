@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pre Test</title>
+
+  <style>
+    .blink {
+      widows: 270px;
+      height: 270px;
+    }
+
+    .blink2 {
+      widows: 350px;
+      height: 350px;
+    }
+  </style>
+</head>
+
+<body class="satu">
+  <div class="container pretest">
+    <h2 class="judul">Pretest</h2>
+    <hr />
+    <div class="container">
+      <h4>
+        Silahkan isi terlebih dahulu soal pretest ini sebelum anda mengikuti
+        pelajaran
+      </h4>
+      <hr />
+      <p class="soal">1.Apa alat yang digunakan untuk memotong mentimun?</p>
+      <form>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" value="x" />Pisau</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" />Gunting</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" />Palu</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" />Semua Salah</label>
+        </div>
+      </form>
+
+      <p class="soal">2. Apa bahan utama membuat nasi goreng?</p>
+      <form>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" />Roti</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" />Gandum</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" value="x" />Nasi</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" />Ketan</label>
+        </div>
+      </form>
+
+      <p class="soal">
+        3. Apa yang terlintas difikiran kalian saat mendengar nasi goreng?
+      </p>
+      <form>
+        <div class="radio">
+          <label><input type="radio" name="optradio3" />Minuman</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio3" />Peralatan</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio3" value="x" />Makanan</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio3" />Aplikasi</label>
+        </div>
+      </form>
+
+      <p class="soal">4. Apa proses utama untuk membuat nasi goreng?</p>
+      <form>
+        <div class="radio">
+          <label><input type="radio" name="optradio4" />dikukus</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio4" />direbus</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio4" />dibakar</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio4" value="x" />digoreng</label>
+        </div>
+      </form>
+
+      <p class="soal">
+        5. Apa bahan yang tidak digunakan dalam memasak nasi goreng?
+      </p>
+      <form>
+        <div class="radio">
+          <label><input type="radio" name="optradio5" />Nasi</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio5" />Bawang</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio5" value="x" />pisau</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio5" />Minyak Goreng</label>
+        </div>
+      </form>
+    </div>
+    <button id="koreksi" type="button" class="btn btn-info ole" data-toggle="modal" data-target="#exampleModalLong">
+      Submit
+    </button>
+  </div>
+
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title kepala" id="exampleModalLongTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="isian"></p>
+          <div id="menuju"></div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Materi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="420" height="345" src="https://www.youtube.com/embed/HOIF4LGMfvo" frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-info" onclick="window.location.href='postTest.html'">
+            Siap untuk Ujian Akhir?
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#koreksi").click(function () {
+        var radioValue1 = $("input[name='optradio1']:checked").val();
+        var radioValue2 = $("input[name='optradio2']:checked").val();
+        var radioValue3 = $("input[name='optradio3']:checked").val();
+        var radioValue4 = $("input[name='optradio4']:checked").val();
+        var radioValue5 = $("input[name='optradio5']:checked").val();
+
+        nilai = [
+          radioValue1,
+          radioValue2,
+          radioValue3,
+          radioValue4,
+          radioValue5
+        ];
+
+        var count = 0;
+        for (var i = 0; i < nilai.length; ++i) {
+          if (nilai[i] == "x") count++;
+        }
+        if (count >= 3) {
+          $(".isian").html(
+            "<img class='blink' src='assets/win.png'>"
+          );
+          $(".kepala").html(
+            "Selamat Kamu Lulus"
+          );
+          $("#menuju").append(
+            "<button type='button' class='btn btn-info' data-toggle='modal' data-target='#Materi'>Tonton Video</button>"
+          );
+          $("#koreksi").hide();
+        } else {
+          $(".isian").html(
+            "<img class='blink2' src='assets/los.png'>"
+          );
+          $(".kepala").html(
+            "Maaf Kamu gagal dalam test, Silahkan coba jawab lagi"
+          );
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
